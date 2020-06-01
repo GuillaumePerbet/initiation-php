@@ -1,50 +1,53 @@
-//return random integer between 1 and 10
-function randomInt() {
-  return Math.floor(Math.random() * 10) + 1;
-}
-
 // setting variables
 let random, number, answer;
 
 // getting DOM elements
 const resultElt = document.getElementById("result");
-const selectElt = document.getElementById("select-table");
+const selectElt = document.getElementById("select");
 const questionElt = document.getElementById("question");
 const questionLabelElt = document.querySelector("#question label");
 
-// switching to question form
-function questionSwitch(number){
-  resultElt.style.display = "none";
-  selectElt.style.display = "none";
-  random = randomInt();
-  questionLabelElt.innerHTML = "Résoudre " + number + " x " + random + " = ";
-  questionElt.style.display = "block";
+function randomInt() {
+  //return random integer between 1 and 10
+  return Math.floor(Math.random() * 10) + 1;
 }
 
-// switching to select-table form
-function answerSwitch(answer){
-  questionElt.style.display = "none";
+function question(number){
+  // generate question
+  random = randomInt();
+  questionLabelElt.innerHTML = "Résoudre " + number + " x " + random + " = ";
+}
+
+function checkAnswer(answer){
+  //check answer and print result
   if (answer == number * random){
     resultElt.innerHTML = "Bonne réponse !";
   }else{
     resultElt.innerHTML = "Mauvaise réponse : " + number + " x " + random + " = " + number * random;
   }
-  resultElt.style.display = "block";
-  selectElt.style.display = "block";
 }
 
-// select-table form on submit
+// select form on submit
+// prepare question
+// switch to question view
 selectElt.addEventListener('submit', (e)=>{
   e.preventDefault();
   const formData = new FormData(selectElt);
   number = formData.get("number");
-  questionSwitch(number);
+  question(number);
+  resultElt.innerHTML = "";
+  selectElt.style.display = "none";
+  questionElt.style.display = "block";
 });
 
 // question form on submit
+// check answer
+// switch to select view
 questionElt.addEventListener('submit', (e)=>{
   e.preventDefault();
   const formData = new FormData(questionElt);
   answer = formData.get("answer");
-  answerSwitch(answer);
+  checkAnswer(answer);
+  questionElt.style.display = "none";
+  selectElt.style.display = "block";
 });
