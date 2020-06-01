@@ -24,60 +24,33 @@
                 <h1>Révisions</h1>
             </header>
 
+            <!-- printing result -->
+            <p id="result"></p>
+
             <!-- selecting table to practice -->
-            <form action="" method="post" enctype="multipart/form-data">
+            <form id="select-table">
                 <label for="number">Choisir la table à réviser :</label>
                 <select name="number" id="number">
-                    <?php
-                    for ($i=1; $i<=10; $i++){
-                    ?>
-                        <!-- form options -->
-                        <option value=<?= $i?>><?= $i?></option>
-                    <?php
-                    }
-                    ?>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
                 </select>
                 <input type="submit" value="Choisir">
             </form>
 
             <!-- asking question -->
-            <form id="question" action="" method="post" enctype="multipart/form-data" style="display:none">
-                <label for="answer">Résoudre <!-- <?=$number?> x <?=$random?> --> = </label>
-                <input type="text" name="answer" id="anwer">
-                <input type="hidden" name="result" id="result" value=<?=$result?>>
+            <form id="question" style="display:none">
+                <label for="answer"></label>
+                <input type="number" name="answer" id="anwer">
                 <input type="submit" value="Valider">
             </form>
-
-            <?php
-            // checking submitted number
-            if (isset($_POST["number"])){
-                echo '<p>'.$_POST["number"].'</p>';
-                $number = $_POST["number"];
-                // choosing a random number and calculating result
-                $random=random_int(1,10);
-                $result=$number*$random;
-                ?>
-                
-            <?php
-            }else{
-                // checking submitted answer
-                if (isset($_POST["result"])){
-                    // checking answer
-                    if ($_POST["answer"]==$_POST["result"]){
-                    ?>
-                        <p>Bonne réponse!</p>
-                    <?php
-                    }else{
-                    ?>
-                        <p>Mauvaise Réponse!</p>
-                    <?php
-                    }
-                }
-                ?>
-                
-            <?php
-            }
-            ?>
         </section>
     </main>
     <script src="script.js"></script>
