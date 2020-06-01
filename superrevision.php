@@ -27,11 +27,11 @@
             </header>
 
             <?php
-            // setting state and score
+            // set state and score
             if (isset($_POST["state"])){
                 $state = $_POST["state"]+1;
                 $score = $_POST["score"];
-                // checking answer
+                // check answer
                 if($_POST["answer"]==$_POST["result"]){
                     ?>
                     <p>Bonne réponse !</p>
@@ -50,7 +50,7 @@
             <p>Votre score : <?=$score?>/<?=$state?></p>
 
             <?php
-            //revisoin end
+            //revision end
             if ($state == 5){
                 ?>
                 <p>Terminé</p>
@@ -60,12 +60,12 @@
                 </form>
                 <?php
             }else{
-                // choosing 2 random numbers and calculating result
+                // choose random numbers and compute result
                 $random1=random_int(1,10);
                 $random2=random_int(1,10);
                 $result=$random1*$random2;
                 ?>
-                <!-- asking question -->
+                <!-- ask question -->
                 <form action="" method="post">
                     <label for="answer">Question <?=$state+1?> : résoudre <?=$random1?> x <?=$random2?> = </label>
                     <input type="text" name="answer" id="anwer">

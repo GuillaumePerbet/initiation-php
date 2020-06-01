@@ -26,8 +26,8 @@
                 <h1>Sélection de tables de multiplication</h1>
             </header>
             
-            <!-- form to select tables to print -->
             <section>
+                <!-- select tables to print -->
                 <form action="checkbox.php" method="post">
                     <fieldset>
                         <legend>Choix des tables à afficher : </legend>
@@ -47,7 +47,7 @@
             
             <?php
             for ($i=1; $i<=10; $i++){
-                // checking submitted numbers
+                // check submitted numbers
                 if (isset($_POST[$i])){
                     ?>
                     <section>
@@ -55,11 +55,10 @@
                             <h2>Table de multiplication du <?=$i?></h2>
                         </header>
                     <?php
-                        // calculting results
+                        // compute and print results
                         for ($j=1; $j<=10; $j++){
                             $result=$i*$j;
                         ?>
-                            <!-- printing results -->
                             <p><?=$i?> x <?=$j?> = <?=$result?></p>
                         <?php
                         }

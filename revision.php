@@ -27,14 +27,14 @@
             </header>
 
             <?php
-            // checking submitted number
+            // check submitted number
             if (isset($_POST["number"])){
                 $number = $_POST["number"];
-                // choosing a random number and calculating result
+                // choose random number and compute result
                 $random=random_int(1,10);
                 $result=$number*$random;
                 ?>
-                <!-- asking question -->
+                <!-- ask question -->
                 <form action="" method="post">
                     <label for="answer">Résoudre <?=$number?> x <?=$random?> = </label>
                     <input type="text" name="answer" id="anwer">
@@ -43,9 +43,8 @@
                 </form>
             <?php
             }else{
-                // checking submitted answer
+                // check submitted answer
                 if (isset($_POST["result"])){
-                    // checking answer
                     if ($_POST["answer"]==$_POST["result"]){
                     ?>
                         <p>Bonne réponse!</p>
@@ -57,7 +56,7 @@
                     }
                 }
                 ?>
-                <!-- selecting table to practice -->
+                <!-- select table to practice -->
                 <form action="" method="post">
                     <label for="number">Choisir la table à réviser :</label>
                     <select name="number" id="number">

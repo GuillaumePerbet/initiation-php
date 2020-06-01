@@ -27,11 +27,10 @@
             </header>
             
             <?php
-            // calculating results
+            // compute and print results
             for ($i=1; $i<=10; $i++){
                 $result=3*$i;
                 ?>
-                <!-- printing result -->
                 <p>3 x <?=$i?> = <?=$result?></p>
             <?php
             }
