@@ -1,0 +1,36 @@
+Prochain projet, en individuel : 
+    
+
+    Initiation au PHP
+
+    Réaliser une mini application de tables de multiplications.
+
+    1. Page 1 - Afficher la table de multiplication de 3.
+
+    2. Page 2 - Sélectionner une table de multiplication entre 1 et 10 dans une liste déroulante select.
+
+    On valide et la table de multiplication sélectionnée s'affiche en dessous.
+
+    3. Page 3 - Le choix de la ou des table(s) de multiplication à afficher se fait par checkboxes et par un bouton "valider". La ou les table(s) de multiplication sélectionée(s) s'affiche(nt) en dessous.
+
+    4. Page 4 - Intégrer un mode révision : l'utilisateur choisit une table de multiplication et doit répondre à une multiplication tirée au hasard dans la table sélectionnée.
+
+    5. Page 5 - Super Mode révision : Poser une série de 5 questions puis afficher le score.
+
+    6. Page 6 - Une fois l'étape 5 finalisée : intégrer AJAX au mode révision afin de rendre l'utilisation du mode révision plus fluide.
+
+    Une fois l'étape 4 finalisée : intégrer AJAX au mode révision afin de rendre l'utilisation du mode révision plus fluide.
+
+    Rem :
+
+    • Appliquer un aspect "Material design" mais sans Framewok CSS. Le css sera compilé par sass.
+
+    • L'ensemble du site est responsive.
+
+    • Faire un menu pour accéder aux différentes pages
+
+    • Déposer le projet sur le serveur de promo dans un dossier "multiplication"
+
+
+
+    A rendre pour le dimanche 07/06/2020 à 23h59 maxi
