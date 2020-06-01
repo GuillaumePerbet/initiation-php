@@ -4,9 +4,7 @@ function randomInt() {
 }
 
 // setting variables
-let random = randomInt();
-let number = 0;
-let answer = 0;
+let random, number, answer;
 
 // getting DOM elements
 const resultElt = document.getElementById("result");
