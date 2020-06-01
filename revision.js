@@ -1,7 +1,7 @@
-// setting variables
+// set variables
 let random, number, answer;
 
-// getting DOM elements
+// get DOM elements
 const resultElt = document.getElementById("result");
 const selectElt = document.getElementById("select");
 const questionElt = document.getElementById("question");
@@ -28,7 +28,7 @@ function checkAnswer(answer){
 }
 
 // select form on submit
-// prepare question
+// send number to question() function
 // switch to question view
 selectElt.addEventListener('submit', (e)=>{
   e.preventDefault();
@@ -41,7 +41,7 @@ selectElt.addEventListener('submit', (e)=>{
 });
 
 // question form on submit
-// check answer
+// send answer to checkAnswer() function
 // switch to select view
 questionElt.addEventListener('submit', (e)=>{
   e.preventDefault();

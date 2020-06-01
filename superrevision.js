@@ -1,9 +1,9 @@
-// setting variables
+// set variables
 let random1, random2, answer;
 let score = 0;
 let state = 0;
 
-// getting DOM elements
+// get DOM elements
 const resultElt = document.getElementById("result");
 const scoreElt = document.getElementById("score");
 const questionElt = document.getElementById("question");
