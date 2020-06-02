@@ -16,30 +16,30 @@
 
             <!-- ask questions -->
             <form id="questions" style="display: none">
-                <label for="answer1"></label>
+                <label for="answer1" id="label1"></label>
                 <input type="number" name="answer1" id="anwer1">
-                <input type="hidden" name="number1-1" value="">
-                <input type="hidden" name="number1-2" value="">
+                <input type="hidden" id="number1-1" name="number1-1" value="">
+                <input type="hidden" id="number1-2" name="number1-2" value="">
 
-                <label for="answer2"></label>
+                <label for="answer2" id="label2"></label>
                 <input type="number" name="answer2" id="anwer2">
-                <input type="hidden" name="number2-1" value="">
-                <input type="hidden" name="number2-2" value="">
+                <input type="hidden" id="number2-1" name="number2-1" value="">
+                <input type="hidden" id="number2-2" name="number2-2" value="">
 
-                <label for="answer3"></label>
+                <label for="answer3" id="label3"></label>
                 <input type="number" name="answer3" id="anwer3">
-                <input type="hidden" name="number3-1" value="">
-                <input type="hidden" name="number3-2" value="">
+                <input type="hidden" id="number3-1" name="number3-1" value="">
+                <input type="hidden" id="number3-2" name="number3-2" value="">
 
-                <label for="answer4"></label>
+                <label for="answer4" id="label4"></label>
                 <input type="number" name="answer4" id="anwer4">
-                <input type="hidden" name="number4-1" value="">
-                <input type="hidden" name="number4-2" value="">
+                <input type="hidden" id="number4-1" name="number4-1" value="">
+                <input type="hidden" id="number4-2" name="number4-2" value="">
 
-                <label for="answer5"></label>
+                <label for="answer5" id="label5"></label>
                 <input type="number" name="answer5" id="anwer5">
-                <input type="hidden" name="number5-1" value="">
-                <input type="hidden" name="number5-2" value="">
+                <input type="hidden" id="number5-1" name="number5-1" value="">
+                <input type="hidden" id="number5-2" name="number5-2" value="">
 
                 <input type="submit" value="Valider">
             </form>

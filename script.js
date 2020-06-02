@@ -1,6 +1,5 @@
 // get DOM elements
 const questionsElt = document.getElementById("questions");
-const labelElts = document.querySelectorAll("#questions label");
 const scoreElt = document.getElementById("score");
 const launchElt = document.getElementById("launch");
 
@@ -17,14 +16,18 @@ questionsElt.addEventListener('submit', (e)=>{
 // launch form on submit
 launchElt.addEventListener('submit', (e)=>{
     e.preventDefault();
-    // fetch 5 { number1 , number2 , question }
+    // fetch five objects { number1 , number2 , question } and fill form
     for (let i=1 ; i<=5 ; i++){
         fetch('questions.php').then(res=>res.text()).then(data=>{
-            // create labels (with hidden input?)
             data=JSON.parse(data);
+            let labelElt = document.getElementById(`label${i}`);
+            labelElt.innerHTML = data.question;
+            let number1Elt = document.getElementById(`number${i}-1`);
+            number1Elt.value = data.number1;
+            let number2Elt = document.getElementById(`number${i}-2`);
+            number2Elt.value = data.number2;
         });
-    }    
-
+    }
     // switch view from launch to questions
     scoreElt.style.display = "none";
     launchElt.style.display = "none";
