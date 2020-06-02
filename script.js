@@ -8,7 +8,10 @@ const launchElt = document.getElementById("launch");
 questionsElt.addEventListener('submit', (e)=>{
     e.preventDefault();
     const formData = new FormData(questionsElt);
-
+    fetch( 'questions.php', { method : "post" , body : formData } )
+        .then( res => res.text() ).then( data =>{
+            scoreElt.innerHTML = data;
+        });
     // display score and launch
     questionsSubmitElt.style.display = "none";
     scoreElt.style.display = "block";
