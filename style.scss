@@ -1,10 +1,20 @@
+// COLORS
 $colors : (
     'primary' : #6200EE,
-    'primary-variant' : #3700B3,
+    'primary-dark' : #3700B3,
     'secondary' : #03DAC6,
-    'secondary-variant' : #018786
-    'background' : #FFFFFF,
+    'secondary-dark' : #018786
     'txt-primary' : #FFFFFF,
     'txt-secondary' : #000000,
     'error' : #B00020
 );
+
+.primary-bck{
+    background-color : map-get( $colors , 'primary' );
+    color : map-get( $colors , 'txt-primary' );
+}
+
+.secondary-bck{
+    background-color : map-get( $colors , 'secondary' );
+    color : map-get( $colors , 'txt-secondary' );
+}
