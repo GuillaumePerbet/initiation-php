@@ -1,5 +1,6 @@
 // get DOM elements
 const questionsElt = document.getElementById("questions");
+const questionsSubmitElt = document.getElementById("questionsSubmit");
 const scoreElt = document.getElementById("score");
 const launchElt = document.getElementById("launch");
 
@@ -9,6 +10,7 @@ questionsElt.addEventListener('submit', (e)=>{
     const formData = new FormData(questionsElt);
 
     // display score and launch
+    questionsSubmitElt.style.display = "none";
     scoreElt.style.display = "block";
     launchElt.style.display = "block";
 });
@@ -22,6 +24,8 @@ launchElt.addEventListener('submit', (e)=>{
             data=JSON.parse(data);
             let labelElt = document.getElementById(`label${i}`);
             labelElt.innerHTML = data.question;
+            let answerElt = document.getElementById(`answer${i}`);
+            answerElt.value = "";
             let number1Elt = document.getElementById(`number${i}-1`);
             number1Elt.value = data.number1;
             let number2Elt = document.getElementById(`number${i}-2`);
@@ -31,5 +35,6 @@ launchElt.addEventListener('submit', (e)=>{
     // switch view from launch to questions
     scoreElt.style.display = "none";
     launchElt.style.display = "none";
+    questionsSubmitElt.style.display = "block";
     questionsElt.style.display = "block";
 });
