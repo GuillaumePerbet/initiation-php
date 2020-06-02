@@ -6,7 +6,7 @@
     <title>Table de la multiplication par 3</title>
 </head>
 <body>
-    <?php include_once("navbar.php"); ?>
+    <?php include_once("navbar.html"); ?>
 
     <main>
         <section>

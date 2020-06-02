@@ -6,7 +6,7 @@
     <title>Super Révisions Ajax</title>
 </head>
 <body>
-    <?php include_once("navbar.php"); ?>
+    <?php include_once("navbar.html"); ?>
     
     <main>
         <section>

@@ -6,7 +6,7 @@
     <title>Révisions</title>
 </head>
 <body>
-    <?php include_once("navbar.php"); ?>
+    <?php include_once("navbar.html"); ?>
     
     <main>
         <section>
