@@ -17,9 +17,7 @@ Prochain projet, en individuel :
 
     5. Page 5 - Super Mode révision : Poser une série de 5 questions puis afficher le score.
 
-    6. Page 6 - Une fois l'étape 5 finalisée : intégrer AJAX au mode révision afin de rendre l'utilisation du mode révision plus fluide.
-
-    Une fois l'étape 4 finalisée : intégrer AJAX au mode révision afin de rendre l'utilisation du mode révision plus fluide.
+    6. Page 6 - Une fois l'étape 5 finalisée : intégrer AJAX au mode super révision afin de rendre l'utilisation du mode révision plus fluide.
 
     Rem :
 

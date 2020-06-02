@@ -35,6 +35,6 @@
         </section>
     </main>
 
-    <script src="superrevision.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
