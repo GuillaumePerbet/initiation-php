@@ -17,6 +17,13 @@ questionsElt.addEventListener('submit', (e)=>{
 // launch form on submit
 launchElt.addEventListener('submit', (e)=>{
     e.preventDefault();
+    // fetch 5 { number1 , number2 , question }
+    for (let i=1 ; i<=5 ; i++){
+        fetch('questions.php').then(res=>res.text()).then(data=>{
+            // create labels (with hidden input?)
+            data=JSON.parse(data);
+        });
+    }    
 
     // switch view from launch to questions
     scoreElt.style.display = "none";
