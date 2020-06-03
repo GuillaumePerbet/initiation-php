@@ -7,8 +7,8 @@
 <body>
     <?php include_once("template/navbar.html"); ?>
 
-    <main class="container">
-        <section>
+    <main>
+        <section class="container">
             <header>
                 <h1>Choix d'une table de multiplication</h1>
             </header>
@@ -39,7 +39,7 @@
                 ?>
                 <section>
                     <header>
-                        <h2>Table de multiplication du <?=$number?></h2>
+                        <h2>Table du <?=$number?></h2>
                     </header>
                 <?php
                 // compute and print results

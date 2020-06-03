@@ -52,7 +52,7 @@ body{
 
 // TITLE
 h1{
-    font-family: 'Roboto-Reguler', sans-serif;
+    font-family: 'Roboto-Regular', sans-serif;
     font-size: 3rem;
     text-align: center;
 }
@@ -87,11 +87,15 @@ input{
 }
 
 //HEADER
-body>header{
+#topbar{
+    background-color : map-get($colors,'primary-dark');  
+    height: 1.5rem;
+}
+
+#navbar{
     background-color : map-get($colors,'primary');
-        color : map-get($colors,'txt-primary');
-        height: 3.5rem;
-    
+    height: 3.5rem;
+
     nav{
         height: 100%;
         
@@ -139,12 +143,14 @@ body>header{
                     }
                 }
             }
-    
         }
     }
 }
 
 // TABLE
 .table{
+    >header{
+        
+    }
 
 }

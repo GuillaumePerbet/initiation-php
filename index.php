@@ -7,10 +7,15 @@
 <body>
     <?php include_once("template/navbar.html"); ?>
 
-    <main class="container">
+    <main>
+        <section class="container">
+            <header>
+                <h1>La table de multiplication du 3</h1>
+            </header>
+        
             <section class="table">
                 <header>
-                    <h1>La table de multiplication du 3</h1>
+                    <h2>Table du 3</h2>
                 </header>
                 
                 <?php
@@ -23,6 +28,7 @@
                 }
                 ?>
             </section>
+        </section>
     </main>
 </body>
 </html>

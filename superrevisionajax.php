@@ -7,8 +7,8 @@
 <body>
     <?php include_once("template/navbar.html"); ?>
     
-    <main class="container">
-        <section>
+    <main>
+        <section class="container">
             <header>
                 <h1>Super Révisions</h1>
             </header>
