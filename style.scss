@@ -46,3 +46,41 @@ $colors : (
 body{
     margin: 0;
 }
+
+nav{
+    background-color : map-get( $colors , 'primary' );
+    color : map-get( $colors , 'txt-primary' );
+    a{
+        display: inline-block;
+
+        &::after{
+            content: "";
+            width: 100%;
+            height: 0.5rem;
+            background-color: map-get($colors, 'txt-primary');
+        }
+    }
+}
+
+h1{
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 6rem;
+    letter-spacing: -0.09375rem;
+}
+
+h2{
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 3.75rem;
+    letter-spacing: -0.03125rem;
+}
+
+input{
+    &[type=submit]{
+        font-family: 'Roboto-Medium', sans-serif;
+        font-size: 0.875rem;
+        letter-spacing: 0.078125rem;
+        padding: 0 1rem;
+        background-color : map-get( $colors , 'secondary' );
+        color : map-get( $colors , 'txt-secondary' );
+    }
+}
