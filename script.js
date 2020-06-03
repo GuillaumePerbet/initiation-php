@@ -23,8 +23,7 @@ launchElt.addEventListener('submit', (e)=>{
     e.preventDefault();
     // fetch five objects { number1 , number2 , question } and fill form
     for (let i=1 ; i<=5 ; i++){
-        fetch('ajax.php').then(res=>res.text()).then(data=>{
-            data=JSON.parse(data);
+        fetch('ajax.php').then(res=>res.json()).then(data=>{
             let labelElt = document.getElementById(`label${i}`);
             labelElt.innerHTML = data.question;
             let answerElt = document.getElementById(`answer${i}`);
