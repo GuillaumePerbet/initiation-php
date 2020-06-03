@@ -28,7 +28,7 @@
                         ?>
                     </select>
     
-                    <input type="submit" value="AFFICHER">
+                    <input type="submit" value="Afficher">
                 </form>
             </section>
             
