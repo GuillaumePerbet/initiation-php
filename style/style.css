@@ -36,6 +36,14 @@ body * {
   margin: auto;
 }
 
+.flex {
+  display: flex;
+}
+
+.evenly {
+  justify-content: space-evenly;
+}
+
 h1 {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 3rem;
@@ -46,6 +54,7 @@ h2 {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 2.125rem;
   letter-spacing: 0.015625rem;
+  text-align: center;
 }
 
 input[type=submit] {
@@ -81,8 +90,6 @@ input[type=submit]:hover {
 }
 #navbar nav ul {
   list-style: none;
-  display: flex;
-  justify-content: space-evenly;
   height: 100%;
   margin: 0;
   padding: 0;

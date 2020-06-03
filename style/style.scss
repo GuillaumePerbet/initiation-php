@@ -50,6 +50,14 @@ body{
     margin: auto;
 }
 
+.flex{
+    display: flex;
+}
+
+.evenly{
+    justify-content: space-evenly;
+}
+
 // TITLE
 h1{
     font-family: 'Roboto-Regular', sans-serif;
@@ -61,6 +69,7 @@ h2{
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 2.125rem;
     letter-spacing: 0.015625rem;
+    text-align: center;
 }
 
 // BUTTON
@@ -101,8 +110,6 @@ input{
         
         ul{
             list-style: none;
-            display: flex;
-            justify-content: space-evenly;
             height: 100%;
             margin: 0;
             padding: 0;
