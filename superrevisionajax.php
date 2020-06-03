@@ -49,7 +49,7 @@
 
             <!-- launch -->
             <form id="launch">
-                <input type="submit" value="C'est parti !">
+                <input type="submit" value="Questions !">
             </form>
 
         </section>
