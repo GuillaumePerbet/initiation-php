@@ -7,22 +7,22 @@
 <body>
     <?php include_once("navbar.html"); ?>
 
-    <main>
-        <section class="container">
-            <header>
-                <h1>La table de multiplication du 3</h1>
-            </header>
-            
-            <?php
-            // compute and print results
-            for ($i=1; $i<=10; $i++){
-                $result=3*$i;
+    <main class="container">
+            <section class="table">
+                <header>
+                    <h1>La table de multiplication du 3</h1>
+                </header>
+                
+                <?php
+                // compute and print results
+                for ($i=1; $i<=10; $i++){
+                    $result=3*$i;
+                    ?>
+                    <p>3 x <?=$i?> = <?=$result?></p>
+                <?php
+                }
                 ?>
-                <p>3 x <?=$i?> = <?=$result?></p>
-            <?php
-            }
-            ?>
-        </section>
+            </section>
     </main>
 </body>
 </html>

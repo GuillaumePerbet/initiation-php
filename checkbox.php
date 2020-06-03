@@ -7,8 +7,8 @@
 <body>
     <?php include_once("navbar.html"); ?>
 
-    <main>
-        <section class="container">
+    <main class="container">
+        <section>
             <header>
                 <h1>Sélection de tables de multiplication</h1>
             </header>
@@ -37,7 +37,7 @@
                 // check submitted numbers
                 if (isset($_POST[$i])){
                     ?>
-                    <section>
+                    <section class="table">
                         <header>
                             <h2>Table de multiplication du <?=$i?></h2>
                         </header>
