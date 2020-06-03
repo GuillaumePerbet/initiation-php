@@ -44,7 +44,7 @@
                 <p>Terminé</p>
                 
                 <form action="" method="post">
-                    <input type="submit" value="Recommencer">
+                    <input type="submit" value="RECOMMENCER">
                 </form>
                 <?php
             }else{
@@ -60,7 +60,7 @@
                     <input type="hidden" name="result" id="result" value=<?=$result?>>
                     <input type="hidden" name="state" id="state" value=<?=$state?>>
                     <input type="hidden" name="score" id="score" value=<?=$score?>>
-                    <input type="submit" value="Valider">
+                    <input type="submit" value="VALIDER">
                 </form>
             <?php
             }

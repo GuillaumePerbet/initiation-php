@@ -29,7 +29,7 @@
                         ?>
                     </select>
     
-                    <input type="submit" value="Afficher">
+                    <input type="submit" value="AFFICHER">
                 </form>
             </section>
             

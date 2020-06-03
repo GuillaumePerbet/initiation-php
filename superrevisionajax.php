@@ -41,7 +41,7 @@
                 <input type="hidden" id="number5-1" name="number5-1" value="">
                 <input type="hidden" id="number5-2" name="number5-2" value="">
 
-                <input id="questionsSubmit" type="submit" value="Valider">
+                <input id="questionsSubmit" type="submit" value="VALIDER">
             </form>
 
             <!-- print score-->
@@ -49,7 +49,7 @@
 
             <!-- launch -->
             <form id="launch">
-                <input type="submit" value="Questions !">
+                <input type="submit" value="QUESTIONS !">
             </form>
 
         </section>

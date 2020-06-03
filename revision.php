@@ -27,7 +27,7 @@
                     <label for="answer">Résoudre <?=$number?> x <?=$random?> = </label>
                     <input type="text" name="answer" id="anwer">
                     <input type="hidden" name="result" id="result" value=<?=$result?>>
-                    <input type="submit" value="Valider">
+                    <input type="submit" value="VALIDER">
                 </form>
             <?php
             }else{
@@ -57,7 +57,7 @@
                         }
                         ?>
                     </select>
-                    <input type="submit" value="Choisir">
+                    <input type="submit" value="CHOISIR">
                 </form>
             <?php
             }
