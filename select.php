@@ -8,25 +8,27 @@
     <?php include_once("template/navbar.html"); ?>
 
     <main>
-        <section class="container">
+        <section class="container flex column center">
             <header>
                 <h1>Choix d'une table de multiplication</h1>
             </header>
             
             <!-- select table to print -->
             <section>
-                <form action="" method="post">
-                    <label for="number">Choisir la table à afficher :</label>
-                    <select name="number" id="number">
-                        <?php
-                        for ($i=1; $i<=10; $i++){
-                        ?>
-                            <!-- form options -->
-                            <option value=<?= $i?>><?= $i?></option>
-                        <?php
-                        }
-                        ?>
-                    </select>
+                <form action="" method="post" class="flex column center">
+                    <div>
+                        <label for="number">Choisir la table à afficher :</label>
+                        <select name="number" id="number">
+                            <?php
+                            for ($i=1; $i<=10; $i++){
+                            ?>
+                                <!-- form options -->
+                                <option value=<?= $i?>><?= $i?></option>
+                            <?php
+                            }
+                            ?>
+                        </select>
+                    </div>
     
                     <input type="submit" value="Afficher">
                 </form>

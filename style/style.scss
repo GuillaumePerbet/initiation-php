@@ -66,6 +66,10 @@ body{
     justify-content: space-evenly;
 }
 
+.justify-center{
+    justify-content: center;
+}
+
 .center{
     align-items: center;
 }
@@ -100,6 +104,7 @@ input{
         font-size: 0.875rem;
         letter-spacing: 0.078125rem;
         text-transform: uppercase;
+        margin: 1rem 0;
         padding: 0.5rem 1rem;
         border: none;
         background-color : map-get($colors,'secondary');

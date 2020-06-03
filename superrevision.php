@@ -8,7 +8,7 @@
     <?php include_once("template/navbar.html"); ?>
     
     <main>
-        <section class="container">
+        <section class="container flex column center">
             <header>
                 <h1>Super Révisions</h1>
             </header>
@@ -53,9 +53,11 @@
                 $result=$random1*$random2;
                 ?>
                 <!-- ask question -->
-                <form action="" method="post">
-                    <label for="answer">Question <?=$state+1?> : résoudre <?=$random1?> x <?=$random2?> = </label>
-                    <input type="text" name="answer" id="anwer">
+                <form action="" method="post" class="flex column center">
+                    <div>
+                        <label for="answer">Question <?=$state+1?> : résoudre <?=$random1?> x <?=$random2?> = </label>
+                        <input type="number" name="answer" id="anwer">
+                    </div>
                     <input type="hidden" name="result" id="result" value=<?=$result?>>
                     <input type="hidden" name="state" id="state" value=<?=$state?>>
                     <input type="hidden" name="score" id="score" value=<?=$score?>>
