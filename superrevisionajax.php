@@ -57,7 +57,7 @@
             <p id="score" style="display: none"></p>
 
             <!-- launch -->
-            <form id="launch">
+            <form id="launch" class="flex column center">
                 <input type="submit" value="Questions !">
             </form>
 
