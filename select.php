@@ -37,19 +37,22 @@
             if (isset($_POST["number"])){
                 $number = $_POST["number"];
                 ?>
-                <section>
+                <section class="table">
                     <header>
                         <h2>Table du <?=$number?></h2>
                     </header>
-                <?php
-                // compute and print results
-                for ($i=1; $i<=10; $i++){
-                    $result=$number*$i;
-                    ?>
-                    <p><?= $number?> x <?= $i?> = <?= $result ?></p>
-                <?php
-                }
-                ?>
+
+                    <ol>
+                        <?php
+                        // compute and print results
+                        for ($i=1; $i<=10; $i++){
+                            $result=$number*$i;
+                            ?>
+                            <li><?= $number?> x <?= $i?> = <?= $result ?></li>
+                        <?php
+                        }
+                        ?>
+                    </ol>
                 </section>
             <?php
             }

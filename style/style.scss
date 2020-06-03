@@ -54,8 +54,20 @@ body{
     display: flex;
 }
 
+.column{
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
 .evenly{
     justify-content: space-evenly;
+}
+
+.center{
+    align-items: center;
 }
 
 // TITLE
@@ -70,6 +82,15 @@ h2{
     font-size: 2.125rem;
     letter-spacing: 0.015625rem;
     text-align: center;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+//LISTS
+ul, ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 // BUTTON
@@ -104,15 +125,13 @@ input{
 #navbar{
     background-color : map-get($colors,'primary');
     height: 3.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
     nav{
         height: 100%;
         
         ul{
-            list-style: none;
             height: 100%;
-            margin: 0;
-            padding: 0;
 
             li{
                 width: 12rem;
@@ -156,8 +175,24 @@ input{
 
 // TABLE
 .table{
+    width: 15rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
     >header{
-        
+        background-color: map-get($colors, 'primary' );
+        color: map-get($colors, 'txt-primary' );
+        border-radius: 0.5rem 0.5rem 0 0;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    ol{
+        padding: 1rem 2rem;
+
+        li{
+            padding: 0.25rem 0;
+        }
     }
 
 }

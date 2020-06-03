@@ -40,8 +40,20 @@ body * {
   display: flex;
 }
 
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
 .evenly {
   justify-content: space-evenly;
+}
+
+.center {
+  align-items: center;
 }
 
 h1 {
@@ -55,6 +67,14 @@ h2 {
   font-size: 2.125rem;
   letter-spacing: 0.015625rem;
   text-align: center;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 input[type=submit] {
@@ -84,15 +104,13 @@ input[type=submit]:hover {
 #navbar {
   background-color: #6200EE;
   height: 3.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 #navbar nav {
   height: 100%;
 }
 #navbar nav ul {
-  list-style: none;
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 #navbar nav ul li {
   width: 12rem;
@@ -125,6 +143,25 @@ input[type=submit]:hover {
 }
 #navbar nav ul li a:hover::after {
   transform: scaleX(1);
+}
+
+.table {
+  width: 15rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.table > header {
+  background-color: #6200EE;
+  color: #FFFFFF;
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.table ol {
+  padding: 1rem 2rem;
+}
+.table ol li {
+  padding: 0.25rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

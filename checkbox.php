@@ -41,15 +41,18 @@
                         <header>
                             <h2>Table du <?=$i?></h2>
                         </header>
-                    <?php
-                        // compute and print results
-                        for ($j=1; $j<=10; $j++){
-                            $result=$i*$j;
-                        ?>
-                            <p><?=$i?> x <?=$j?> = <?=$result?></p>
-                        <?php
-                        }
-                        ?>
+
+                       <ol>
+                            <?php
+                            // compute and print results
+                            for ($j=1; $j<=10; $j++){
+                                $result=$i*$j;
+                            ?>
+                                <li><?=$i?> x <?=$j?> = <?=$result?></li>
+                            <?php
+                            }
+                            ?>
+                       </ol>
                     </section>
                 <?php
                 }

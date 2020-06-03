@@ -8,7 +8,7 @@
     <?php include_once("template/navbar.html"); ?>
 
     <main>
-        <section class="container">
+        <section class="container flex column center">
             <header>
                 <h1>La table de multiplication du 3</h1>
             </header>
@@ -18,15 +18,17 @@
                     <h2>Table du 3</h2>
                 </header>
                 
-                <?php
-                // compute and print results
-                for ($i=1; $i<=10; $i++){
-                    $result=3*$i;
+                <ol>
+                    <?php
+                    // compute and print results
+                    for ($i=1; $i<=10; $i++){
+                        $result=3*$i;
+                        ?>
+                        <li>3 x <?=$i?> = <?=$result?></li>
+                    <?php
+                    }
                     ?>
-                    <p>3 x <?=$i?> = <?=$result?></p>
-                <?php
-                }
-                ?>
+                </ol>
             </section>
         </section>
     </main>
