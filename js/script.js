@@ -8,7 +8,7 @@ const launchElt = document.getElementById("launch");
 questionsElt.addEventListener('submit', (e)=>{
     e.preventDefault();
     const formData = new FormData(questionsElt);
-    fetch( 'ajax.php', { method : "post" , body : formData } )
+    fetch( 'js/ajax.php', { method : "post" , body : formData } )
         .then( res => res.text() ).then( data =>{
             scoreElt.innerHTML = data;
         });
@@ -23,7 +23,7 @@ launchElt.addEventListener('submit', (e)=>{
     e.preventDefault();
     // fetch five objects { number1 , number2 , question } and fill form
     for (let i=1 ; i<=5 ; i++){
-        fetch('ajax.php').then(res=>res.json()).then(data=>{
+        fetch('js/ajax.php').then(res=>res.json()).then(data=>{
             let labelElt = document.getElementById(`label${i}`);
             labelElt.innerHTML = data.question;
             let answerElt = document.getElementById(`answer${i}`);

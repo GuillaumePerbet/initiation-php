@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include_once("head.html"); ?>
+    <?php include_once("template/head.html"); ?>
     <title>Séléction de tables de multiplication</title>
 </head>
 <body>
-    <?php include_once("navbar.html"); ?>
+    <?php include_once("template/navbar.html"); ?>
 
     <main class="container">
         <section>

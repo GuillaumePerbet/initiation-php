@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include_once("head.html"); ?>
+    <?php include_once("template/head.html"); ?>
     <title>Super Révisions Ajax</title>
 </head>
 <body>
-    <?php include_once("navbar.html"); ?>
+    <?php include_once("template/navbar.html"); ?>
     
     <main class="container">
         <section>
@@ -54,6 +54,6 @@
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
