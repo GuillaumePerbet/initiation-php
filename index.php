@@ -8,7 +8,7 @@
     <?php include_once("navbar.html"); ?>
 
     <main>
-        <section>
+        <section class="container">
             <header>
                 <h1>La table de multiplication du 3</h1>
             </header>
