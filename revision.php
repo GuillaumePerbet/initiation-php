@@ -23,7 +23,7 @@
                 ?>
                 <!-- ask question -->
                 <form action="" method="post" class="flex column center">
-                    <div>
+                    <div class="flex center">
                         <label for="answer">Résoudre <?=$number?> x <?=$random?> = </label>
                         <input type="number" name="answer" id="anwer">
                     </div>

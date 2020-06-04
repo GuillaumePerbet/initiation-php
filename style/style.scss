@@ -265,7 +265,7 @@ fieldset{
                 display: block;
             }
         }
-      }
+    }
 
     .checkmark {
         position: absolute;
@@ -301,4 +301,23 @@ fieldset{
             box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),0px 4px 5px 0px rgba(0, 0, 0, 0.14),0px 1px 10px 0px rgba(0,0,0,.12);
         }
     }
-  }
+}
+
+// NUMBER
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    width: 3rem;
+    margin-left: 0.75rem;
+    border: 1px solid map-get($colors, 'select' );
+    border-radius: 0.25rem;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 0.5rem;
+}
