@@ -314,10 +314,11 @@ input[type=number] {
     -moz-appearance: textfield;
     width: 3rem;
     margin-left: 0.75rem;
-    border: 1px solid map-get($colors, 'select' );
+    background-color: map-get($colors, 'select' );
+    border: none;
     border-radius: 0.25rem;
     font-family: 'Roboto-Medium', sans-serif;
     font-size: 1.25rem;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
 }
