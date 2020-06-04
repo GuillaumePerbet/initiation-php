@@ -38,5 +38,5 @@ launchElt.addEventListener('submit', (e)=>{
     scoreElt.style.display = "none";
     launchElt.style.display = "none";
     questionsSubmitElt.style.display = "block";
-    questionsElt.style.display = "block";
+    questionsElt.style.display = "flex";
 });
