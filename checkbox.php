@@ -13,10 +13,10 @@
                 <h1>Sélection de tables de multiplication</h1>
             </header>
             
-            <section>
+            <div class="elevation">
                 <!-- select tables to print -->
                 <form action="checkbox.php" method="post" class="flex column center">
-                    <fieldset class="flex">
+                    <fieldset class="flex margin">
                         <legend>Choix des tables à afficher : </legend>
                             <?php
                             for ($i=1; $i<=10; $i++){
@@ -33,9 +33,9 @@
 
                     <input type="submit" value="Afficher">
                 </form>
-            </section>
+            </div>
             
-            <section class="flex wrap justify-center">
+            <div class="flex wrap justify-center">
                 <?php
                 for ($i=1; $i<=10; $i++){
                     // check submitted numbers
@@ -62,7 +62,7 @@
                     }
                 }
                 ?>
-            </section>
+            </div>
         </section>
     </main>
 </body>

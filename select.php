@@ -14,9 +14,9 @@
             </header>
             
             <!-- select table to print -->
-            <section>
+            <div class="elevation">
                 <form action="" method="post" class="flex column center">
-                    <div class="flex center">
+                    <div class="flex center margin">
                         <label for="number">Choisir la table à afficher :</label>
                         <select name="number" id="number">
                             <?php
@@ -36,7 +36,7 @@
     
                     <input type="submit" value="Afficher">
                 </form>
-            </section>
+            </div>
             
             <?php
             // check submitted number

@@ -45,6 +45,10 @@ body{
     }
 }
 
+p{
+    margin: 0;
+}
+
 .container{
     width: 100%;
     max-width: 80rem;
@@ -73,6 +77,17 @@ body{
 
 .center{
     align-items: center;
+}
+
+.elevation{
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.margin{
+    margin-bottom: 1rem;
 }
 
 // TITLE
@@ -105,7 +120,6 @@ input{
         font-size: 0.875rem;
         letter-spacing: 0.078125rem;
         text-transform: uppercase;
-        margin: 1rem 0 2rem;
         padding: 0.5rem 1rem;
         border: none;
         background-color : map-get($colors,'secondary');
@@ -186,7 +200,7 @@ input{
 .table{
     width: 15rem;
     border-radius: 0.5rem;
-    margin: 0 1rem 2rem;
+    margin: 1rem;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
     >header{
@@ -329,12 +343,30 @@ input[type=number] {
     }
 }
 
-// ERROR AND CORRECT ANSWER
+// CORRECT, INCORRECT, SCORE
 .incorrect{
-    text-decoration: line-through;
-    color:  map-get($colors, 'error' );
+    margin-bottom: 1rem;
+
+    span{
+        &:first-of-type{
+            text-decoration: line-through;
+            color:  map-get($colors, 'error' );
+        }
+        
+        &:last-of-type{
+            color: map-get($colors, 'secondary-dark' );
+        }
+    }
 }
 
 .correct{
-    color: map-get($colors, 'secondary-dark' );
+    margin-bottom: 1rem;
+
+    span{
+        color: map-get($colors, 'secondary-dark' );
+    }
+}
+
+.score{
+    margin-bottom: 1rem;
 }
