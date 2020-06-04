@@ -16,14 +16,16 @@
             <section>
                 <!-- select tables to print -->
                 <form action="checkbox.php" method="post" class="flex column center">
-                    <fieldset>
+                    <fieldset class="flex">
                         <legend>Choix des tables à afficher : </legend>
                             <?php
                             for ($i=1; $i<=10; $i++){
                             ?>
                                 <!-- form checkboxes -->
-                                <input type="checkbox" name=<?=$i?> id=<?=$i?> value=<?=$i?>/>
-                                <label for=<?=$i?>><?=$i?></label>
+                                <label class="box"><?=$i?>
+                                    <input type="checkbox" name=<?=$i?> id=<?=$i?> value=<?=$i?>/>
+                                    <span class="checkmark"></span>
+                                </label>
                             <?php
                             }
                             ?>
