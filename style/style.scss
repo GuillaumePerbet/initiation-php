@@ -328,3 +328,13 @@ input[type=number] {
         border-color: map-get($colors, 'secondary' );
     }
 }
+
+// ERROR AND CORRECT ANSWER
+.incorrect{
+    text-decoration: line-through;
+    color:  map-get($colors, 'error' );
+}
+
+.correct{
+    color: map-get($colors, 'secondary-dark' );
+}

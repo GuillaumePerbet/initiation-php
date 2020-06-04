@@ -17,9 +17,8 @@
             // check submitted number
             if (isset($_POST["number"])){
                 $number = $_POST["number"];
-                // choose random number and compute result
+                // choose random number
                 $random=random_int(1,10);
-                $result=$number*$random;
                 ?>
                 <!-- ask question -->
                 <form action="" method="post" class="flex column center">
@@ -27,20 +26,30 @@
                         <label for="answer">Résoudre <?=$number?> x <?=$random?> = </label>
                         <input type="number" name="answer" id="anwer">
                     </div>
-                    <input type="hidden" name="result" id="result" value=<?=$result?>>
+                    <input type="hidden" name="number1" id="number1" value=<?=$number?>>
+                    <input type="hidden" name="number2" id="number2" value=<?=$random?>>
                     <input type="submit" value="Valider">
                 </form>
             <?php
             }else{
                 // check submitted answer
-                if (isset($_POST["result"])){
-                    if ($_POST["answer"]==$_POST["result"]){
+                if (isset($_POST["answer"])){
+                    $answer = $_POST["answer"];
+                    $number1 = $_POST["number1"];
+                    $number2 = $_POST["number2"];
+                    $result = $number1 * $number2;
+                    if ($answer == $result){
                     ?>
-                        <p>Bonne réponse!</p>
+                        <p>
+                            <?=$number1?> x <?=$number2?> = <span class="correct"><?=$answer?></span>
+                        </p>
                     <?php
                     }else{
                     ?>
-                        <p>Mauvaise Réponse!</p>
+                        <p>
+                            <?=$number1?> x <?=$number2?> = <span class="incorrect"><?=$answer?></span><br/>
+                            <?=$number1?> x <?=$number2?> = <span class="correct"><?=$result?></span>
+                        </p>
                     <?php
                     }
                 }

@@ -16,17 +16,26 @@
             <?php
             // set state and score
             if (isset($_POST["state"])){
+                $answer = $_POST["answer"];
                 $state = $_POST["state"]+1;
                 $score = $_POST["score"];
+                $number1 = $_POST["number1"];
+                $number2 = $_POST["number2"];
+                $result = $number1 * $number2;
                 // check answer
-                if($_POST["answer"]==$_POST["result"]){
+                if($answer == $result){
                     ?>
-                    <p>Bonne réponse !</p>
+                    <p>
+                        <?=$number1?> x <?=$number2?> = <span class="correct"><?=$answer?></span>
+                    </p>
                     <?php
                     $score++;
                 }else{
                     ?>
-                    <p>Mauvaise réponse !</p>
+                    <p>
+                        <?=$number1?> x <?=$number2?> = <span class="incorrect"><?=$answer?></span><br/>
+                        <?=$number1?> x <?=$number2?> = <span class="correct"><?=$result?></span>
+                    </p>
                 <?php
                 }
             }else{
@@ -40,8 +49,7 @@
             //revision end
             if ($state == 5){
                 ?>
-                <p>Terminé</p>
-                
+                                
                 <form action="" method="post">
                     <input type="submit" value="Recommencer">
                 </form>
@@ -50,7 +58,6 @@
                 // choose random numbers and compute result
                 $random1=random_int(1,10);
                 $random2=random_int(1,10);
-                $result=$random1*$random2;
                 ?>
                 <!-- ask question -->
                 <form action="" method="post" class="flex column center">
@@ -58,7 +65,8 @@
                         <label for="answer">Question <?=$state+1?> : résoudre <?=$random1?> x <?=$random2?> = </label>
                         <input type="number" name="answer" id="anwer">
                     </div>
-                    <input type="hidden" name="result" id="result" value=<?=$result?>>
+                    <input type="hidden" name="number1" id="number1" value=<?=$random1?>>
+                    <input type="hidden" name="number2" id="number2" value=<?=$random2?>>
                     <input type="hidden" name="state" id="state" value=<?=$state?>>
                     <input type="hidden" name="score" id="score" value=<?=$score?>>
                     <input type="submit" value="Valider">
