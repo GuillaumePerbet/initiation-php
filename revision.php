@@ -48,7 +48,7 @@
                         }else{
                         ?>
                             <p class="incorrect">
-                                <?=$number1?> x <?=$number2?> = <span><?=$answer?></span><br/>
+                                <span><?=$number1?> x <?=$number2?> = <?=$answer?></span><br/>
                                 <?=$number1?> x <?=$number2?> = <span><?=$result?></span>
                             </p>
                         <?php
