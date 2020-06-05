@@ -14,8 +14,10 @@
             </header>
 
             <div class="elevation flex column center">
+                <!--introduction-->
+                <p id="intro">Répondez à une série de 5 questions</p>
                 <!-- ask questions -->
-                <form id="questions" style="display: none" class="flex column center">
+                <form id="questions" style="display: none" class="flex column">
                     <div class="margin">
                         <label for="answer1" id="label1"></label>
                         <input type="number" name="answer1" id="answer1">
@@ -50,16 +52,16 @@
                         <input type="hidden" id="number5-1" name="number5-1" value="">
                         <input type="hidden" id="number5-2" name="number5-2" value="">
                     </div>
+
+                    <!-- print answer and score-->
+                    <p class="score" id="score"></p>
     
                     <input id="questionsSubmit" type="submit" value="Valider">
                 </form>
     
-                <!-- print score-->
-                <p class="score" id="score" style="display: none"></p>
-    
                 <!-- launch -->
                 <form id="launch" class="flex column center">
-                    <input type="submit" value="Questions !">
+                    <input type="submit" value="C'est parti !">
                 </form>
             </div>
 
