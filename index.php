@@ -32,5 +32,7 @@
             </section>
         </section>
     </main>
+
+    <?php include_once("template/footer.html"); ?>
 </body>
 </html>

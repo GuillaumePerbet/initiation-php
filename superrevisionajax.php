@@ -68,6 +68,8 @@
         </section>
     </main>
 
+    <?php include_once("template/footer.html"); ?>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

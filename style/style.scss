@@ -142,7 +142,7 @@ input{
 }
 
 //HEADER
-#topbar{
+.bar{
     background-color : map-get($colors,'primary-dark');  
     height: 1.5rem;
 }
@@ -385,4 +385,9 @@ input[type=number] {
 // LAUNCH
 #launch{
     margin-top: 1rem;
+}
+
+// RESPONSIVE
+@media (max-width: 970px){
+
 }
