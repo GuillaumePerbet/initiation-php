@@ -45,10 +45,6 @@ body{
     }
 }
 
-main{
-    margin-bottom: 1rem;
-}
-
 p{
     margin: 0;
 }
@@ -145,6 +141,9 @@ input{
 .bar{
     background-color : map-get($colors,'primary-dark');  
     height: 1.5rem;
+    width: 100%;
+    position: relative;
+    z-index: 3;
 }
 
 #navbar{
@@ -154,6 +153,10 @@ input{
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 1rem;
     letter-spacing: 0.03125rem;
+
+    #burger{
+        display: none;
+    }
 
     nav{
         height: 100%;
@@ -393,28 +396,42 @@ input[type=number] {
     #navbar{
         position: relative;
 
+        #burger{
+            position: relative;
+            display: block;
+            margin-left: 5rem;
+            padding-top: 0.75rem;
+            width: 2rem;
+            cursor: pointer;
+            z-index: 3;
+        }
+
         nav{
             position: absolute;
             z-index: 2;
-            top: 3.5rem;
+            top: -25rem;
             height: 20rem;
             width: 12rem;
-            left: -15rem;
             background-color: map-get($colors, 'primary' );
             border-bottom-right-radius: 0.5rem;
             box-shadow: 0 5px 6px rgba(0,0,0,0.23);
+            transition: 0.5s;
 
             ul{
                 flex-direction: column;
 
                 li{
 
-                    a::after{
-                        transform: scaleX(1);
-                        width: 40%;
-                        left: 30%;
-                        top: 2rem;
-                        height: 0.1rem;
+                    a{
+                        opacity: 1;
+                    
+                        &::after{
+                            transform: scaleX(1);
+                            width: 40%;
+                            left: 30%;
+                            top: 2rem;
+                            height: 0.1rem;
+                        }
                     }
 
                     &:last-of-type a::after{

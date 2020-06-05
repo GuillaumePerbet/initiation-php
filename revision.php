@@ -83,6 +83,6 @@
         </section>
     </main>
 
-    <?php include_once("template/footer.html"); ?>
+    <script src="js/burger.js"></script>
 </body>
 </html>
