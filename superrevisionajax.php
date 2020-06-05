@@ -15,7 +15,7 @@
 
             <div class="elevation flex column center">
                 <!--introduction-->
-                <p id="intro">Répondez à une série de 5 questions</p>
+                <p id="intro" class="txt-center">Répondez à une série de 5 questions</p>
                 <!-- ask questions -->
                 <form id="questions" style="display: none" class="flex column">
                     <div class="margin">

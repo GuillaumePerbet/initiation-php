@@ -16,8 +16,8 @@
             <div class="elevation">
                 <!-- select tables to print -->
                 <form action="checkbox.php" method="post" class="flex column center">
-                    <fieldset class="flex margin">
-                        <legend>Choix des tables à afficher : </legend>
+                    <fieldset class="flex margin wrap">
+                        <legend>Choix les tables à afficher : </legend>
                             <?php
                             for ($i=1; $i<=10; $i++){
                             ?>

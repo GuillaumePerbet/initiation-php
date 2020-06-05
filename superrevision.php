@@ -63,7 +63,7 @@
                     <!-- ask question -->
                     <form action="" method="post" class="flex column center">
                         <div class="margin">
-                            <label for="answer">Question <?=$state+1?> : résoudre <?=$random1?> x <?=$random2?> = </label>
+                            <label for="answer">Résoudre <?=$random1?> x <?=$random2?> = </label>
                             <input type="number" name="answer" id="anwer">
                         </div>
                         <input type="hidden" name="number1" id="number1" value=<?=$random1?>>

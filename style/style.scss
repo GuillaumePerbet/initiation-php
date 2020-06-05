@@ -114,6 +114,10 @@ ul, ol{
     padding: 0;
 }
 
+.txt-center{
+    text-align: center;
+}
+
 // BUTTON
 input{
     &[type=submit]{
@@ -380,6 +384,11 @@ input[type=number] {
     margin-bottom: 1rem;
 }
 
+//SCORE
+#score{
+    align-self: center;
+}
+
 // VALIDER
 #questionsSubmit{
     align-self: center;
@@ -392,6 +401,10 @@ input[type=number] {
 
 // RESPONSIVE
 @media (max-width: 992px){
+    .container{
+        max-width: 36rem;
+    }
+
     // NAVIGATION
     #navbar{
         position: relative;
@@ -410,6 +423,7 @@ input[type=number] {
             position: absolute;
             z-index: 2;
             top: -25rem;
+            left: 0;
             height: 20rem;
             width: 12rem;
             background-color: map-get($colors, 'primary' );
@@ -440,5 +454,25 @@ input[type=number] {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        max-width: 21rem;
+    }
+
+    label[for=number]{
+        max-width: 8.5rem;
+    }
+
+    legend{
+        max-width: 10rem;
+    }
+}
+
+@media (max-width: 448px){
+    #navbar #burger{
+        margin-left: 2rem;
     }
 }

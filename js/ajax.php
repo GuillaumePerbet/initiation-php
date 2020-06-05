@@ -7,7 +7,7 @@ if (isset($_POST["number1-1"])){
             $score++;
         }
     }
-    echo "Votre score est de ".$score." / 5";
+    echo "Votre score : ".$score." / 5";
 }else{
     // launch form handling
     $number1 = random_int(1,10);
