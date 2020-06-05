@@ -16,19 +16,21 @@
             <div class="elevation">
                 <!-- select tables to print -->
                 <form action="checkbox.php" method="post" class="flex column center">
-                    <fieldset class="flex margin wrap">
+                    <fieldset class="margin">
                         <legend>Choix les tables à afficher : </legend>
-                            <?php
-                            for ($i=1; $i<=10; $i++){
-                            ?>
-                                <!-- form checkboxes -->
-                                <label class="box"><?=$i?>
-                                    <input type="checkbox" name=<?=$i?> id=<?=$i?> value=<?=$i?>/>
-                                    <span class="checkmark"></span>
-                                </label>
-                            <?php
-                            }
-                            ?>
+                            <div class="flex wrap">
+                                <?php
+                                for ($i=1; $i<=10; $i++){
+                                ?>
+                                    <!-- form checkboxes -->
+                                    <label class="box"><?=$i?>
+                                        <input type="checkbox" name=<?=$i?> id=<?=$i?> value=<?=$i?>/>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                <?php
+                                }
+                                ?>
+                            </div>
                     </fieldset>
 
                     <input type="submit" value="Afficher">
